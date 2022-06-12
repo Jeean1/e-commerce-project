@@ -5,6 +5,8 @@ function toggleMenu(){
     nav.classList.toggle("hidden");
 }
 
+
+
 function cardGenerator(array) {
     // 1. Generar el codigo Html que voy a poenr en la pagina
     // 2. Identificar el contenedor donde pondré mi código
@@ -32,8 +34,6 @@ function cardGenerator(array) {
     console.log("hola")
     container.innerHTML = html
 }
-
-
 
 let product = [
 
