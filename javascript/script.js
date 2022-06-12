@@ -1,6 +1,9 @@
 "use strict"
 
-
+function toggleMenu(){
+    const nav = document.getElementById("nav");
+    nav.classList.toggle("hidden");
+}
 
 function cardGenerator(array) {
     // 1. Generar el codigo Html que voy a poenr en la pagina

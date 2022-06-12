@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/styleFrame1.css">
+    
     <title>Document</title>
 </head>
 
@@ -18,15 +19,47 @@
             <div class="logo-nav">
                 <img src="./images/nav-logo.png" class="logo-img-nav">
             </div>
-            <div class="carrito-img-nav">
-                <img src="./images/carrito-img.png" class="carrito-img">
+            <div class="carrito__img-nav col-1 ">
+                <button class="boton-1" onclick="toggleMenu()"> <img src="./images/carrito-img.png"
+                        class="carrito-img"></button>
             </div>
-
+        </div>
+        <div id="nav" class="hidden">
+            <div id="" class="container__formulario-menu  ">
+                <div class="txt__carrito ">
+                    <h2 class="text__carrito-menu">Carrito de compras</h2>
+                </div>
+                <div class="container__carrito-menu">
+                    <div class="images__producto-4">
+                        <img class="images__carrito-prod4" src="./images/product-4.png" alt="">
+                    </div>
+                    <div class="text__sel-producto">
+                        <h3 class="text__sel-producto">Hoodie rojo - logo blanco</h3>
+                        <p class="text__sel-producto">$265.00</p>
+                        <div class="text__parrafo-menu">
+                            <p class="parrafo__menu">Talla:</p>
+                            <p class="parrafo__menu">Color:</p>
+                        </div>
+                        <div class="">
+                            <button class="btn__compra">+</button>
+                            <p>1</p>
+                            <button class="btn__compra">-</button>
+                        </div>
+                        <div class="">
+                            <button class="btn__basurero">🗑</button>
+                        </div>
+                    </div>
+                </div>
+                <p class="subtotal">Subtotal: $265.00</p>
+                <button class="ir__carrito">Ir al carrito</button>
+            </div>
         </div>
         <div class="container__tallas-playeras col-6">
             <div class="txt__academlo-atras">
+                <button class="btn__atras-tienda"><img class="img__atras-tienda" src="./images/arrow.png" alt=""></button>
                 <p>Academlo-Tienda oficial</p>
             </div>
+            
             <div class="info__playeras-colores">
                 <h2>Playera negra - logo blanco</h2>
                 <h2 class="precio__playera-academlo">$ 265.00</h2>
@@ -109,9 +142,13 @@
             <p class="txt__contacto">¡Suscríbete para recibir noticias de productos y descuentos especiales!</p>
             <div class="mb-3">
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Escribe tu email">
-            <button type="button" class="suscribirse">Suscríbete</button>  
+                <button type="button" class="suscribirse">Suscríbete</button>
             </div>
         </div>
+
+
+
+        <script src="./javascript/script.js"></script>
 </body>
 
 </html>
